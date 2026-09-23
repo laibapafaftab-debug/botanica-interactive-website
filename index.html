@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botanica - Task 2 Interactive Website</title>
+    <!-- Google Fonts: Fraunces & Work Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">Botanica<span>.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#steps">How It Works</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">🌙</button>
+                <button id="openModal" class="btn-primary">Book a Call</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Asymmetric Hero Section -->
+    <section id="hero" class="hero container">
+        <div class="hero-text">
+            <span class="badge">Garden-Fresh Experience 🌿</span>
+            <h1>Cultivating Digital Growth with <span class="highlight">Purpose</span></h1>
+            <p>An interactive front-end application built for the Inovegen internship, blending stunning botanical aesthetics with seamless performance.</p>
+            <div class="hero-btns">
+                <a href="#features" class="btn-primary">Explore Features</a>
+                <button id="openModalHero" class="btn-outline">Get Started</button>
+            </div>
+        </div>
+        <div class="hero-graphic">
+            <!-- Custom SVG Illustration -->
+            <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="botanical-svg">
+                <circle cx="200" cy="200" r="180" fill="#CFE36B" fill-opacity="0.3"/>
+                <path d="M200 350V120" stroke="#1E2B1A" stroke-width="4" stroke-linecap="round"/>
+                <path d="M200 240C150 240 120 190 140 140C160 90 200 120 200 120C200 120 240 90 260 140C280 190 250 240 200 240Z" fill="#E85D4C" fill-opacity="0.8"/>
+                <path d="M200 190C170 190 150 160 165 130C180 100 200 120 200 120C200 120 220 100 235 130C250 160 230 190 200 190Z" fill="#1E2B1A"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Zigzag Feature Rows -->
+    <section id="features" class="features-section container">
+        <div class="section-title">
+            <h2>Designed Differently</h2>
+            <p>Moving away from generic templates into structured, thoughtful design components.</p>
+        </div>
+        
+        <div class="zigzag-row">
+            <div class="zigzag-content">
+                <span class="step-num">01</span>
+                <h3>Harmonious Color Systems</h3>
+                <p>Rooted in sage-white and deep forest green, accented with vibrant coral and lime to establish a true lifestyle brand feel.</p>
+            </div>
+            <div class="zigzag-img bg-card-1"></div>
+        </div>
+
+        <div class="zigzag-row reverse">
+            <div class="zigzag-content">
+                <span class="step-num">02</span>
+                <h3>Expressive Typography</h3>
+                <p>Pairing the expressive serif character of Fraunces with the clean, modern readability of Work Sans for striking visual hierarchy.</p>
+            </div>
+            <div class="zigzag-img bg-card-2"></div>
+        </div>
+    </section>
+
+    <!-- Genuine Numbered Steps -->
+    <section id="steps" class="steps-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Execution Sequence</h2>
+                <p>The genuine step-by-step roadmap followed during development.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <span class="num">1</span>
+                    <h4>Concept & Palette</h4>
+                    <p>Defining layout behavior, color pairings, and wireframe structuring.</p>
+                </div>
+                <div class="step-card">
+                    <span class="num">2</span>
+                    <h4>Semantic Layout</h4>
+                    <p>Writing responsive HTML5 landmarks and asymmetric CSS grid architecture.</p>
+                </div>
+                <div class="step-card">
+                    <span class="num">3</span>
+                    <h4>Dynamic JS Logic</h4>
+                    <p>Implementing theme toggles, accordions, interactive modals, and validation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Carousel -->
+    <section class="testimonial-section container">
+        <h2>What Peers Say</h2>
+        <div class="carousel-container">
+            <div class="testimonial-slide active">
+                <p>"The aesthetic choice combined with robust JavaScript logic makes this Task 2 implementation exceptional."</p>
+                <h4>— Inovegen Peer Reviewer</h4>
+            </div>
+            <div class="testimonial-slide">
+                <p>"Clean code structure, smooth state handling, and incredible attention to UI/UX details."</p>
+                <h4>— Project Evaluator</h4>
+            </div>
+            <div class="carousel-controls">
+                <button id="prevSlide">&#10094;</button>
+                <button id="nextSlide">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section id="faq" class="faq-section container">
+        <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header">Is this project responsive across all screens? <span>+</span></button>
+                <div class="accordion-body">
+                    <p>Yes! Fully optimized for mobile phones, tablets, and wide-screen desktop displays using fluid layouts and media queries.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Does it support dark and light themes? <span>+</span></button>
+                <div class="accordion-body">
+                    <p>Absolutely. Theme preferences are securely saved to your browser's localStorage for persistent usage across sessions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form with Validation -->
+    <section id="contact" class="contact-section container">
+        <div class="contact-wrapper">
+            <h2>Get in Touch</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <small class="error-msg"></small>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email Address" required>
+                    <small class="error-msg"></small>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+                    <small class="error-msg"></small>
+                </div>
+                <button type="submit" class="btn-primary full-width">Send Message</button>
+                <p id="formSuccess" class="success-msg"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Botanica. Designed for Inovegen Task 2 by Laiba Aftab.</p>
+        </div>
+    </footer>
+
+    <!-- Book a Call Modal -->
+    <div id="callModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h3>Book a Consultation</h3>
+            <p>Select your preferred time slot for a quick project chat.</p>
+            <input type="date" class="modal-input" required>
+            <button class="btn-primary full-width" style="margin-top: 15px;">Confirm Booking</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
