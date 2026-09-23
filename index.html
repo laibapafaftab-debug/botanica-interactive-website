@@ -35,7 +35,7 @@
 
     <!-- Asymmetric Hero Section -->
     <section id="hero" class="hero container">
-        <div class="hero-text">
+        <div class="hero-text hero-anim hero-anim-1">
             <span class="badge">Garden-Fresh Experience 🌿</span>
             <h1>Cultivating Digital Growth with <span class="highlight">Purpose</span></h1>
             <p>An interactive front-end application built for the Inovegen internship, blending stunning botanical aesthetics with seamless performance.</p>
@@ -44,7 +44,7 @@
                 <button id="openModalHero" class="btn-outline">Get Started</button>
             </div>
         </div>
-        <div class="hero-graphic">
+        <div class="hero-graphic hero-anim hero-anim-2">
             <!-- Custom SVG Illustration -->
             <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="botanical-svg">
                 <circle cx="200" cy="200" r="180" fill="#CFE36B" fill-opacity="0.3"/>
@@ -57,12 +57,12 @@
 
     <!-- Zigzag Feature Rows -->
     <section id="features" class="features-section container">
-        <div class="section-title">
+        <div class="section-title reveal">
             <h2>Designed Differently</h2>
             <p>Moving away from generic templates into structured, thoughtful design components.</p>
         </div>
         
-        <div class="zigzag-row">
+        <div class="zigzag-row reveal">
             <div class="zigzag-content">
                 <span class="step-num">01</span>
                 <h3>Harmonious Color Systems</h3>
@@ -71,7 +71,7 @@
             <div class="zigzag-img bg-card-1"></div>
         </div>
 
-        <div class="zigzag-row reverse">
+        <div class="zigzag-row reverse reveal">
             <div class="zigzag-content">
                 <span class="step-num">02</span>
                 <h3>Expressive Typography</h3>
@@ -84,22 +84,22 @@
     <!-- Genuine Numbered Steps -->
     <section id="steps" class="steps-section">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title reveal">
                 <h2>Execution Sequence</h2>
                 <p>The genuine step-by-step roadmap followed during development.</p>
             </div>
             <div class="steps-grid">
-                <div class="step-card">
+                <div class="step-card reveal reveal-stagger" style="--reveal-delay: 0;">
                     <span class="num">1</span>
                     <h4>Concept & Palette</h4>
                     <p>Defining layout behavior, color pairings, and wireframe structuring.</p>
                 </div>
-                <div class="step-card">
+                <div class="step-card reveal reveal-stagger" style="--reveal-delay: 1;">
                     <span class="num">2</span>
                     <h4>Semantic Layout</h4>
                     <p>Writing responsive HTML5 landmarks and asymmetric CSS grid architecture.</p>
                 </div>
-                <div class="step-card">
+                <div class="step-card reveal reveal-stagger" style="--reveal-delay: 2;">
                     <span class="num">3</span>
                     <h4>Dynamic JS Logic</h4>
                     <p>Implementing theme toggles, accordions, interactive modals, and validation.</p>
@@ -109,7 +109,7 @@
     </section>
 
     <!-- Testimonial Carousel -->
-    <section class="testimonial-section container">
+    <section class="testimonial-section container reveal">
         <h2>What Peers Say</h2>
         <div class="carousel-container">
             <div class="testimonial-slide active">
@@ -129,17 +129,17 @@
 
     <!-- FAQ Accordion -->
     <section id="faq" class="faq-section container">
-        <div class="section-title">
+        <div class="section-title reveal">
             <h2>Frequently Asked Questions</h2>
         </div>
         <div class="accordion">
-            <div class="accordion-item">
+            <div class="accordion-item reveal reveal-stagger" style="--reveal-delay: 0;">
                 <button class="accordion-header">Is this project responsive across all screens? <span>+</span></button>
                 <div class="accordion-body">
                     <p>Yes! Fully optimized for mobile phones, tablets, and wide-screen desktop displays using fluid layouts and media queries.</p>
                 </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item reveal reveal-stagger" style="--reveal-delay: 1;">
                 <button class="accordion-header">Does it support dark and light themes? <span>+</span></button>
                 <div class="accordion-body">
                     <p>Absolutely. Theme preferences are securely saved to your browser's localStorage for persistent usage across sessions.</p>
@@ -149,7 +149,7 @@
     </section>
 
     <!-- Contact Form with Validation -->
-    <section id="contact" class="contact-section container">
+    <section id="contact" class="contact-section container reveal">
         <div class="contact-wrapper">
             <h2>Get in Touch</h2>
             <form id="contactForm" class="contact-form">
