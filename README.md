@@ -70,6 +70,6 @@ No dependencies to install — Google Fonts are loaded via CDN link in `index.ht
 
 ![Botanica mobile view](screenshots/mobile.jpeg)
 
-tablet
+**Tablet**
 <img width="1038" height="716" alt="tablet" src="https://github.com/user-attachments/assets/61015062-d60f-4397-93ef-9ca9e30e4c8b" />
 
